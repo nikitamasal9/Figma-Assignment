@@ -1,284 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figma Assignment</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/> -->
-</head>
-<body>
-    <!-- Navbar content -->
-    <header>
-        <div class="navbar">
-            <div class="name1">D-Express</div>
-            <div class="group1">    
-                <div class="name2">Refill Presciption</div>
-                <div class="name3">Buy Medicine</div>
+    <title>Figma Assignment</title>
+  </head>
+  <body>
 
-                <div class="name4">Contact a pharmacist</div>
+    <div class="main_body">
+      <div class="bg_img">
+        <div class="header_container">
+          <!-- navbar section  -->
+          <navbar class="flex_box">
+            <div class="logo"><img src="./images/dex.svg"></div>
+            <div class="nav_items">
+              <ul class="flex_box">
+                <li>Refill Prescription</li>
+                <li>Buy Medicine</li>
+                <li>Contact a pharmacist</li>
+              </ul>
             </div>
-            <button class="login_button">
-                <div class="login">Login</div>
-            </button>
-        </div>
-    </header>
+            <button class="btn">Login</button>
+          </navbar>
 
-    <!-- container body  -->
-    <div class="container">
-        <div class="doctor">
-        </div>
-        <div class="first_content">
-            We can get your Drug Prescriptions to You
-        </div>
-        <div class="second_content">
-            We have all the drugs your doctor prescribed for your health and what’s more, we can get it to you.
-        </div>
-        <div class="third_content">
-            <button class="ikeja_btn">
-                <div class="i">Ikeja</div>
-            </button>
-            <button class="vi_btn">
-                <div class="v">VI</div>
-            </button>
-            <button class="lekki_btn">
-                <div class="l">Lekki</div>
-            </button>
-            <button class="ajah_btn">
-                    <div class="aj">Ajah</div>
-            </button>
-        </div>
-    
-        <div class="search">
-            <div class="icon">
-                <i class="fas fa-search"></i>
+          <div class="content flex_box">
+            <div class="explanation">
+              <h1>We can get your drug prescription to you</h1>
+              <p>
+                We have all the drugs your doctor prescribed for your health<br> and
+                what's more. We can get it to you.
+              </p>
+              <ul class="flex_box">
+                <li class="ikeja">Ikeja</li>
+                <li>VI</li>
+                <li>Lekki</li>
+                <li>Ajah</li>
+              </ul>
+              <div class="flex_box search">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Seach for drugs in our store" />
+                <button class="search_btn">Find drug</button>
+              </div>
             </div>
-            <!-- <div class="form_input">Search for drugs in our store</div> -->
-            <form >
-                <input type="text" placeholder="Search for drugs in our store">
-            </form>
+            <div class="doctor">
+              <img src="./images/rectangle2.svg">
+            </div>
+          </div>
         </div>
-        <button class="drug_btn">
-            <div class="drug_btn_text">Find drug</div>
-        </button>
+      </div>
+      
+      <!-- affiliation part -->
+      <div class="container">
+        <section class="affiliaton flex_col">
+          <h1>Our Affiliations</h1>
+          <div class="flex_box line">
+            <img src="./images/line.svg">
+          </div>
+          <div class="affiliation_img">
+            <img src="./images/image7.svg">
+            <img src="./images/image8.svg">
+            <img src="./images/image9.svg">
+          </div>
+        </section>
+        <section class="benefit_section">
+          <div class="benefits flex_col">
+            <h1>Key Benefits</h1>
+            <div class="flex_box">
+              <img src="./images/line.svg">
+            </div>
+          </div>
+          <!-- Benefit part -->
+          <div class="benefit flex_box">
+            <div class="benefit_content">
+              <h2>All your medicine needs in one place</h2>
+              <ul>
+                <li>
+                  <img src="./images/Exclude.svg"> Search and find
+                  all kinds of drugs
+                </li>
+                <li>
+                  <img src="./images/Exclude.svg"> We have drugs
+                  for special case treatments
+                </li>
+                <li>
+                  <img src="./images/Exclude.svg"> Get notified
+                  when your drug is available
+                </li>
+              </ul>
+              <button class="get_pres">
+                Get Prescription
+                <span><img src="./images/arrow.svg"><img src="./images/arrow.svg"></iimg></span>
+              </button>
+            </div>
+            <div class="benefit_images"><img src="./images/benefit1.svg"></div>
+          </div>
+          
+          <div class="benefit flex_box">
+            <div class="benefit_images"><img src="./images/benefit2.svg"></div>
+            <div class="benefit_content">
+              <h2>Get your drugs at your doorstep</h2>
+              <ul>
+                <li>
+                  <img src="./images/Exclude.svg"> Get straight
+                  delivery at your doorstep
+                </li>
+                <li>
+                  <img src="./images/Exclude.svg"> We deliver
+                  within 24hrs of request
+                </li>
+                <li>
+                  <img src="./images/Exclude.svg"> We guarantee
+                  speedy response
+                </li>
+              </ul>
+              <button class="get_pres">
+                Get Prescription
+                <span> <img src="./images/arrow.svg"><img src="./images/arrow.svg"></span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="benefit flex_box">
+            <div class="benefit_content">
+              <h2>Set up your profile and get refill easily</h2>
+              <ul>
+                <li>
+                  <img src="./images/Exclude.svg"> When you are a
+                  member your refill is easier
+                </li>
+                <li>
+                  <img src="./images/Exclude.svg"> With one click
+                  your medicine is on it's way
+                </li>
+                <li>
+                  <img src="./images/Exclude.svg"> Select a health
+                  care specialist
+                </li>
+              </ul>
+              <button class="get_pres">
+                Get Prescription
+                <span><img src="./images/arrow.svg"><img src="./images/arrow.svg"></span>
+              </button>
+            </div>
+            <div class="benefit_images"><img src="./images/benefit3.svg" alt="" /></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- medicine part -->
+      <div class="second_content">
+        <section class="flex_box">
+          <div class="client"><img src="./images/medicine.svg"></div>
+          <div class="client">
+            <div class="flex_col">
+              <h2>What Our Clients Say</h2>
+              <div class="flex_box line">
+                <img src="./images/line.svg">
+              </div>
+            </div>
+            <p>
+              “The ease of delivery is one that I depended on when I was bedriden and couldn’t even walk. Their services is awesome”
+            </p>
+            <h5 class="client_name">-Gerald Maldilinene</h5>
+            <div class="circle">
+              <img src="./images/circle.svg">
+  
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
 
-    <!-- medicine section  -->
-    <div class="affiliationContainer">
-        <div class="second">
-            <div class="affiliation">
-                Our Affiliations
-            </div>
-            <div class="bar">
-                <div class="bar_g"></div>
-                <div class="bar_b"></div>
-            </div>
-            <div class="logos">
-                <div class="img1"><img src="./images/image7.svg"></div>
-                <div class="img2"><img src="./images/image8.svg"></div>
-                <div class="img3"><img src="./images/image9.svg"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- benifit container  -->
-    <div class="mainContainerSection">
-        <div class="benifitContainer">
-            <div class="whole">
-                <div class="key">
-                    <div class="key_text">Key Benefits</div>
-                    <div class="key_bar">
-                        <div class="key_barg"></div>
-                        <div class="key_barb"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="text1"> 
-                <div class="key1_head1">All your Medicine needs in one place</div>
-                <div class="key1_body1">
-                    <div class="ex1"></div>
-                    <div class="line1">Search and find all kind of drugs</div>
-                    <div class="ex2"></div>
-                    <div class="line2">We have drugs for soecial case treatments</div>
-                    <div class="ex3"></div>
-                    <div class="line3">Get notified when your drug is available</div>
-                </div>
-                <div class="get_pres">
-                    <button class="key1_btn">Get prescription</button>
-                    <div class="arrow"></div>
-                    <div class="arrow1"></div>
-                </div>
-            </div>
-            <div class="right_images">
-                <div class="vector1"></div>
-                <div class="vector"></div>
-                <div class="i1"></div>
-            </div>
-        </div>
-
-        <div class="drugsContainer">
-            <div class="image_left">
-                <div class="bg1"></div>
-                <div class="bg2"></div>
-                <div class="ellipse34"></div>
-                <div class="ellipse33"></div>
-                <div class="bg3"></div>
-            </div>
-
-            <div class="content_right">
-                <div class="key2_head2">Get your drugs at your doorstep</div>
-                <div class="ex21"></div>
-                <div class="line21">Get straigh delivery to your doorstep</div>
-                <div class="ex22"></div>
-                <div class="line22">We deliver within 24hrs of request</div>
-                <div class="ex23"></div>
-                <div class="line23">We guarantee speedily response </div>
-                <div class="get_pres2">
-                    <button class="key2_btn">Get prescription</button>
-                    <div class="arrow21"></div>
-                    <div class="arrow22"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="profile_setting">
-            <div class="images_right">
-                <div class="last3"></div>
-                <div class="last2"></div>
-                <div class="peep-45"></div>
-                <div class="peep-46"></div>
-                <div class="girl"></div>
-            </div>
-
-            <div class="contentsLeft">
-                <div class="key3_head1">Set up your profile and get refill easily </div>
-                <div class="key3_body1">
-                        <div class="ex31"></div>
-                        <div class="line31">When you are a member your refill is easier</div>
-                        <div class="ex32"></div>
-                        <div class="line32">With one click your medicine is on it’s way </div>
-                        <div class="ex33"></div>
-                        <div class="line33">Select a health care specialist</div>
-                </div>
-                
-                <div class="get_pres3">
-                        <button class="key3_btn">Get prescription</button>
-                        <div class="arrow3"></div>
-                        <div class="arrow31"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="clientSection">
-        <div class="medicine"></div>
-        <div class="clientThoughts">
-            <div class="client">
-                What Our Clients Say
-            </div>
-            <div class="bar3">
-                <div class="bar3_g"></div>
-                <div class="bar3_b"></div>
-            </div>
-            <div class="client_say">
-                “The ease of delivery is one that I depended on when I was bedriden and couldn’t even walk. Their services is awesome”
-            </div>
-            <div class="client_name">
-                - Gerald Maldiliene
-            </div>
-        </div>
-        <div class="ellipses">
-            <div class="ellipse1"></div>
-            <div class="ellipse2"></div>
-            <div class="ellipse3"></div>
-            <div class="ellipse4"></div>
-        </div>
-    </div>
-
-    <!-- footer begins -->
+    <!-- footer  -->
     <footer>
-        <div class="signup">
-            <div class="sign">
-                Sign up for our Newsletter
+      <div class="footer_container">
+        <div class="footer_desc flex_box">
+          <div class="footerDesc">
+            <h3>Sign Up for our NewsLetter</h3>
+            <p>
+              Get to know updates in the field of medicine and know how oftern
+              our stores are stocked.
+            </p>
+          </div>
+          <div class="email">
+            <p>Your Email</p>
+            <div class="subscribe flex_box">
+              <input type="text" placeholder="example@email.com" />
+              <button>Subscribe<i class="fa fa-paper-plane"></i></button>
             </div>
-            <div class="signup2">
-                Get to know updates in the field of medicine and know how often our stores are stocked
-            </div>
+          </div>
         </div>
-        <div class="about">
-            <div class="title">
-                D-Express
-            </div>
-            <div class="aboutus">
-                Your favourite online pharmacy store. We offer onsite delivery and your health is our priority
-            </div>
-        </div>
-        <div class="links">
-            <div class="title_link">
-                Quick Links
-            </div>
-            <div class="contact">
-                Contact us
-            </div>
-            <div class="abt">
-                About Us
-            </div>
-            <div class="career">
-                Careers
-            </div>
-        </div>
-        <div class="service">
-            <div class="services">
-                Services
-            </div>
-            <div class="delivery">
-                Delivery
-            </div>
-            <div class="purchase">
-                Purchase
-            </div>
-            <div class="consult">
-                Consult Specialist
-            </div>
-        </div>
-        <div class="social">
-            <div class="social_media">
-                Social Media
-            </div>
-            <div class="fb">
-                Facebook
-            </div>
-            <div class="twit">
-                Twitter
-            </div>
-            <div class="linked">
-                Linkedin
-            </div>
-
+        <div class="about flex_box">
+          <div class="aboutus">
+            <h2>D-Express</h2>
+            <p>
+              Your favorite online <br>pharmacy store. We offer onsite delivery and your
+              health is our priority.
+            </p>
+          </div>
+          
+          <div class="links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>Contact Us</li>
+              <li>About Us</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+          <div class="services">
+            <h3>Services</h3>
+            <ul>
+              <li>Delivery</li>
+              <li>Purchase</li>
+              <li>Consult Specialist</li>
+            </ul>
+          </div>
+          <div class="social">
+            <h3>Social Media</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Linkedin</li>
+            </ul>
+          </div>
         </div>
         <div class="copy">
-            Designed by sophisticateddev. copyright© 
+          Designed by sophisticateddev. copyright &copy;
         </div>
-        <div class="mail">
-            <div class="your_email">
-                Your Email
-            </div>
-            <div class="subscribe_form">
-                <form >
-                <input type="text" placeholder="example@email.com" class="subscribe_input">
-                </form>
-            </div>
-            
-        </div>
-        <button class="subscribe_btn">
-            <div class="subscribe_text">
-                Subscribe
-            </div>
-            <div class="subscribe_logo"></div>
-        </button>
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>
